@@ -5,23 +5,23 @@
 class Cpf < Formula
   desc "A CLI tool to validate, format and generate Brazilian CPF numbers"
   homepage "https://github.com/diegopeixoto/go-cpf-cli"
-  version "1.12.0"
+  version "1.13.0"
   license "MIT"
 
   depends_on "go" => :build
 
   on_macos do
     on_intel do
-      url "https://github.com/aquarela-io/go-cpf-cli/releases/download/v1.12.0/go-cpf-cli_Darwin_x86_64.zip"
-      sha256 "cc585acef696a051b3d6af762c17fd11d54b4168d271e7a4717a14228da66988"
+      url "https://github.com/aquarela-io/go-cpf-cli/releases/download/v1.13.0/go-cpf-cli_Darwin_x86_64.zip"
+      sha256 "feadd02f5c032d8f353631b2987a5a5381a56c4313eade058fd88a4d465ab5d1"
 
       def install
         bin.install "cpf"
       end
     end
     on_arm do
-      url "https://github.com/aquarela-io/go-cpf-cli/releases/download/v1.12.0/go-cpf-cli_Darwin_arm64.zip"
-      sha256 "1cf257ca8915be1870ed3add3bc6fd0e8e05d48602bd6a28cdfaa7a3d47ce18a"
+      url "https://github.com/aquarela-io/go-cpf-cli/releases/download/v1.13.0/go-cpf-cli_Darwin_arm64.zip"
+      sha256 "7f4599b9412e4f20be4da476f2d3dd61c354f6a581a4f3e8294185b69684968f"
 
       def install
         bin.install "cpf"
@@ -32,8 +32,8 @@ class Cpf < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aquarela-io/go-cpf-cli/releases/download/v1.12.0/go-cpf-cli_Linux_x86_64.tar.gz"
-        sha256 "9878a64e719b816834f501348c271ca8c5d294746b6f822e5cef1fbdff7d5f81"
+        url "https://github.com/aquarela-io/go-cpf-cli/releases/download/v1.13.0/go-cpf-cli_Linux_x86_64.tar.gz"
+        sha256 "f5a2df0bc26094ffda53f63c6b7d35e6cb40f051a5fbc274db6b072b50ee2e65"
 
         def install
           bin.install "cpf"
@@ -42,8 +42,8 @@ class Cpf < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aquarela-io/go-cpf-cli/releases/download/v1.12.0/go-cpf-cli_Linux_arm64.tar.gz"
-        sha256 "748a3b341bc27ed35cf3e182c095f01f5e0885ec4d512133da9816beec3b79a7"
+        url "https://github.com/aquarela-io/go-cpf-cli/releases/download/v1.13.0/go-cpf-cli_Linux_arm64.tar.gz"
+        sha256 "ca69f703c08d4765338cb4ca905abdc4e2f455d91e92bee33d47bc60041ffd4a"
 
         def install
           bin.install "cpf"
