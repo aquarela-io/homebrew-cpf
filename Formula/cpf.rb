@@ -5,23 +5,23 @@
 class Cpf < Formula
   desc "A CLI tool to validate, format and generate Brazilian CPF numbers"
   homepage "https://github.com/diegopeixoto/go-cpf-cli"
-  version "1.7.0"
+  version "1.7.1"
   license "MIT"
 
   depends_on "go" => :build
   depends_on :macos
 
   on_intel do
-    url "https://github.com/diegopeixoto/go-cpf-cli/releases/download/v1.7.0/go-cpf-cli_Darwin_x86_64.zip"
-    sha256 "5f0e76a0a4ab75c80126f12f11830b40e33fd453307da81198eb4934b0fe1395"
+    url "https://github.com/diegopeixoto/go-cpf-cli/releases/download/v1.7.1/go-cpf-cli_Darwin_x86_64.zip"
+    sha256 "e647ee9db293428a861ea397e21b117aefc5b7fa2c85c599b46e978495cd334b"
 
     def install
       bin.install "cpf"
     end
   end
   on_arm do
-    url "https://github.com/diegopeixoto/go-cpf-cli/releases/download/v1.7.0/go-cpf-cli_Darwin_arm64.zip"
-    sha256 "fb5f18e667f61da1aa3a119825c37fa8ea3d82309249631e14759a7cc8087f3c"
+    url "https://github.com/diegopeixoto/go-cpf-cli/releases/download/v1.7.1/go-cpf-cli_Darwin_arm64.zip"
+    sha256 "8c7b821b4bcc36aef824afd0d6af9e8a7fa1587e64e847246639383e79ac0641"
 
     def install
       bin.install "cpf"
