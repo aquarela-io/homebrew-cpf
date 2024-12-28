@@ -5,23 +5,23 @@
 class Cpf < Formula
   desc "A CLI tool to validate, format and generate Brazilian CPF numbers"
   homepage "https://github.com/diegopeixoto/go-cpf-cli"
-  version "1.9.0"
+  version "1.10.0"
   license "MIT"
 
   depends_on "go" => :build
 
   on_macos do
     on_intel do
-      url "https://github.com/diegopeixoto/go-cpf-cli/releases/download/v1.9.0/go-cpf-cli_Darwin_x86_64.zip"
-      sha256 "d963d2c35d74d46d3eacc12d9e50954bd1cc71dc2e2dc75350e1e22d2a74afb7"
+      url "https://github.com/diegopeixoto/go-cpf-cli/releases/download/v1.10.0/go-cpf-cli_Darwin_x86_64.zip"
+      sha256 "66a3ce86b607d12ab85a49de1a01fd538b2edb4b27e694a28eb17e588dd0830e"
 
       def install
         bin.install "cpf"
       end
     end
     on_arm do
-      url "https://github.com/diegopeixoto/go-cpf-cli/releases/download/v1.9.0/go-cpf-cli_Darwin_arm64.zip"
-      sha256 "2998428fea06329686e5751f44f3f3860693ed1005e516f9c5641be0520159d0"
+      url "https://github.com/diegopeixoto/go-cpf-cli/releases/download/v1.10.0/go-cpf-cli_Darwin_arm64.zip"
+      sha256 "506b3dfd58270ba658b05046740504629f1a6ed20d32dbd30157e957328d8363"
 
       def install
         bin.install "cpf"
@@ -32,8 +32,8 @@ class Cpf < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/diegopeixoto/go-cpf-cli/releases/download/v1.9.0/go-cpf-cli_Linux_x86_64.tar.gz"
-        sha256 "a4625cb473f386c27d670c5b1ef14b6ea2b21425b336caed4a20cd278e406970"
+        url "https://github.com/diegopeixoto/go-cpf-cli/releases/download/v1.10.0/go-cpf-cli_Linux_x86_64.tar.gz"
+        sha256 "b8913f540b5c43bc1a788d57f55cccb15ec709e364d0af3d27b5320141e11d0e"
 
         def install
           bin.install "cpf"
@@ -42,8 +42,8 @@ class Cpf < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/diegopeixoto/go-cpf-cli/releases/download/v1.9.0/go-cpf-cli_Linux_arm64.tar.gz"
-        sha256 "9227e0a757f54c925cb811ea091c2142d930e6788ed77150f0069aef8cf8d4f0"
+        url "https://github.com/diegopeixoto/go-cpf-cli/releases/download/v1.10.0/go-cpf-cli_Linux_arm64.tar.gz"
+        sha256 "810c388dd42055f3517f96d3b8879588729733d549d7227ca296b6f153d4a8a2"
 
         def install
           bin.install "cpf"
